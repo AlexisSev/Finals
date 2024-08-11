@@ -1,0 +1,448 @@
+*{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  text-decoration: none;
+}
+img {
+  transition: all 0.3s ease-in-out;
+}
+.nav-buttons{
+  width: auto;
+  height:10vh;
+  display: flex;
+  background-color: rgb(209, 209, 27);
+  justify-content: end;
+  align-items: center;
+}
+.nav-buttons h1 a{
+  margin-right: 10rem;
+  color:black;
+}
+header{
+  background-color:yellow;
+  width: 100vw;
+  height: 100vh;
+}
+header img {
+  position: absolute;
+  width: 70rem;
+  left: 25rem;
+}
+
+section{
+ background-image: url(images/section.jpg);
+  border-top: 5px solid white;
+  height: 65vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.body{
+  width: 100vw;
+  height: auto;
+  background-color: yellow;
+}
+.join {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+.join h1{
+  font-size: 5rem;
+  color: orange;
+  height: auto;
+  margin-left: 10rem;
+  width: 100%;
+}
+.join img {
+  position: absolute;
+  width: auto;
+  height: 41rem;
+  margin-left: 50%;
+  top:112.8rem;
+}
+.branches {
+ height: 10rem;
+  width: auto;
+}
+.branches p {
+  position: absolute;
+  left: 10rem;
+  top: 154rem;
+  font-size:5rem;
+}
+.branches h2{
+  text-align: center;
+  width: 30rem;
+  margin-left: 10rem;
+  height: 4rem;
+  color: white;
+  background-color: green;
+  border-radius: 2rem;
+  font-size: 2.8rem;
+  padding: 1rem;
+}
+footer{
+  width: 100vw;
+  height: auto;
+  text-align: center;
+  background-color: green;
+  color: white;
+}
+footer img {
+  width: auto;
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+/* Phone View: Min width 425px and Max width 768px */
+@media (min-width: 425px) and (max-width: 768px) {
+  .nav-buttons h1 a {
+    margin-right: 7rem;
+    font-size: 2rem;
+  }
+  header {
+    height: 51.2vh;
+    text-align: center;
+  }
+
+  header img {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    left: 0;
+    margin: 0 auto;
+    top: 2.4rem;
+  }
+
+  section {
+    background-image: url(images/section.jpg);
+    border-top: 5px solid white;
+    height: 21vh;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .body {
+    padding: 1rem; /* Add some padding for better spacing */
+    width: 100%;  /* Ensure it takes up the full width of the viewport */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .join {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    padding: 1rem 0; /* Add padding for spacing */
+  }
+
+  .join h1 {
+    font-size:3rem;
+    margin-left: 0; 
+  
+  }
+
+  .join img {
+    width: 100%;
+    max-width: 500px;
+    height: 30rem;
+    margin-left: 0;
+    top: initial;
+    position: relative;
+    margin-top: 1rem;
+  }
+
+  .branches {
+    padding: 1rem; 
+    text-align: center; 
+  }
+
+  .branches p {
+    font-size: 3rem; 
+    width: 100%; 
+    max-width: 80%;
+    line-height: 1.5; 
+    text-align: justify;
+    top: 95rem;
+    text-align: center;
+    left: 4rem;
+  }
+
+
+  .branches h2 {
+    padding: 2.5rem;
+    font-size: 2.5rem;
+    width: 100%;
+    max-width: 20rem;
+    margin-left: 5rem;
+  
+  }
+  
+  footer {
+    width: 100%;
+    padding: 2rem 1rem;
+    background-color: green;
+    color: white;
+  }
+
+  footer img {
+    width: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  footer h1 {
+    font-size: 1.7rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    line-height: 1.4;
+    max-width: 100%;
+  }
+}
+
+/* Tablet View: Min width 769px and Max width 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav-buttons {
+    height: 8vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-buttons h1 a {
+    margin-right: 7rem;
+    font-size: 2rem;
+  }
+
+  header {
+    height: 80vh;
+    background-color: yellow;
+  }
+
+  header img {
+    width: 50rem;
+    left: 9rem;
+    top: 11rem;
+  }
+
+  /* Section adjustments */
+  section {
+    width: auto;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    border-top: 5px solid white;
+  }
+
+  /* Body adjustments */
+  .body {
+    width: 100vw;
+    height: auto;
+    background-color: yellow;
+    padding: 2rem 1rem;
+  }
+
+  /* Join section adjustments */
+  .join {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .join h1 {
+    font-size: 3.5rem;
+    margin-left: -10rem;
+  }
+
+  .join img {
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    margin-left: -5rem;
+    top: initial;
+    position: relative;
+    margin-top: 2rem;
+  }
+
+  /* Branches section adjustments */
+  .branches {
+    height: auto;
+    width: 100%;
+    padding: 2rem 1rem;
+    text-align: center;
+    position: relative; /* Position relative to allow children to position correctly */
+  }
+
+  .branches p {
+    font-size: 2rem;
+    line-height: 1.4;
+    max-width: 80%;
+    margin: 0 auto; /* Center the paragraph */
+    position: relative;
+    top: 0; /* Reset top position */
+    left: -3rem; /* Reset left position */
+    margin-bottom: 2rem; /* Add margin to the top */
+  }
+
+  .branches h2 {
+    font-size: 2.2rem;
+    width: 100%;
+    max-width: 25rem;
+    padding: 1rem;
+    background-color: green;
+    color: white;
+    border-radius: 1rem;
+    margin-left: 16rem;
+  } 
+
+  /* Footer adjustments */
+  footer {
+    width: 100%;
+    padding: 2rem 1rem;
+    background-color: green;
+    color: white;
+  }
+
+  footer img {
+    width: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  footer h1 {
+    font-size: 1.7rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    line-height: 1.4;
+    max-width: 100%;
+  }
+}
+
+
+/* Laptop/Desktop View: Min width 1024px and Max width 1440px */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .nav-buttons {
+    height: 8vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-buttons h1 a {
+    margin-right: 5rem;
+    font-size: 2rem;
+  }
+
+  header {
+    height: 80vh;
+    background-color: yellow;
+  }
+
+  header img {
+    width: 50rem;
+    left: 15rem;
+    top: 11rem;
+  }
+
+  /* Section adjustments */
+  section {
+    width: auto;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    border-top: 5px solid white;
+  }
+
+  /* Body adjustments */
+  .body {
+    width: 100vw;
+    height: auto;
+    background-color: yellow;
+    padding: 2rem 1rem;
+  }
+
+  /* Join section adjustments */
+  .join {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .join h1 {
+    font-size: 3.5rem;
+    margin-left: -10rem;
+  }
+
+  .join img {
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    margin-left: -5rem;
+    top: initial;
+    position: relative;
+    margin-top: 2rem;
+  }
+
+  /* Branches section adjustments */
+  .branches {
+    height: auto;
+    width: 100%;
+    padding: 2rem 1rem;
+    text-align: center;
+    position: relative;
+  }
+
+  .branches p {
+    font-size: 2rem;
+    line-height: 1.4;
+    max-width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    left: -3rem;
+    margin-bottom: 2rem;
+  }
+
+  .branches h2 {
+    font-size: 2.2rem;
+    width: 100%;
+    max-width: 25rem;
+    padding: 1rem;
+    background-color: green;
+    color: white;
+    border-radius: 1rem;
+    margin-left: 27rem;
+  } 
+
+  footer {
+    width: 100%;
+    padding: 2rem 1rem;
+    background-color: green;
+    color: white;
+  }
+
+  footer img {
+    width: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  footer h1 {
+    font-size: 1.7rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    line-height: 1.4;
+    max-width: 100%;
+  }
+}

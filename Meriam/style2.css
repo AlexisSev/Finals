@@ -1,0 +1,500 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  text-decoration: none;
+}
+
+body {
+  background-color: yellow;
+  width: 100%;
+}
+img {
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-buttons {
+  width: auto;
+  height: 10vh;
+  display: flex;
+  background-color: rgb(209, 209, 27);
+  justify-content: end;
+  align-items: center;
+}
+
+.nav-buttons h1 a {
+  margin-right: 10rem;
+  color: black;
+}
+
+header {
+  background-color: yellow;
+  width: 100vw;
+  height: 100vh;
+}
+
+header img {
+  position: absolute;
+  width: 70rem;
+  left: 25rem;
+}
+
+.body {
+  width: 100vw;
+  height: auto;
+  border-top: 5px solid white;
+  background-color: yellow;
+  padding: 0;
+}
+
+.body-child {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.white {
+  width: 50%;
+  height: 10rem;
+  background-color: white;
+  border-radius: 2rem;
+  margin-top: 1rem;
+}
+
+.potato {
+  position: absolute;
+  width: auto;
+  height: 10rem;
+  left: 8rem;
+}
+
+.green {
+  width: 100%;
+  height: auto;
+  background-color: green;
+  position: absolute;
+  left: 40%;
+  border-radius: 2rem;
+  color: white;
+}
+
+.green h1 {
+  font-size: 5rem;
+  margin-left: 1rem;
+}
+
+.green h2 {
+  font-size: 6rem;
+  margin-left: 17rem;
+}
+
+.body h3 {
+  text-align: center;
+  margin-top: 9rem;
+  font-size: 5rem;
+  background-color: white;
+  width: 35%;
+  height: auto;
+  margin-left: 30%;
+  border-radius: 2rem;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 2rem;
+  padding-left: 5rem;
+  padding-top: 3rem;
+  height: auto;
+  width: auto;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: green;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 30rem;
+}
+
+.product img {
+  width: auto;
+  height: 18rem;
+  border-radius: 0.5rem;
+}
+
+.product p {
+  font-size: 4rem;
+  color: black;
+  margin-top: 0.5rem;
+  text-align: end;
+  width: 50%;
+  height: auto;
+  background-color: white;
+  text-align: center;
+  border-radius: 2rem;
+}
+
+footer {
+  margin-top: 20rem;
+  width: 100vw;
+  height: auto;
+  text-align: center;
+  background-color: green;
+  color: white;
+}
+
+footer img {
+  width: auto;
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+
+/* Phone View: Min width 425px and Max width 768px */
+@media (max-width: 768px) {
+  .nav-buttons {
+    height: 8vh;
+    justify-content: center;
+  }
+
+  .nav-buttons h1 a {
+    margin-right: 3rem; /* Reduced margin for smaller screens */
+    font-size: 2rem; /* Adjusted font size for readability */
+  }
+
+  header {
+    height: 50vh; /* Adjusted height for better proportion */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header img {
+    width: 80%;
+    left: 4rem;
+    top: 8rem;
+    height: auto;
+  }
+
+  .body-child {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .white {
+    width: 100%;
+    height: 10rem;
+    margin: 1rem;
+  }
+
+  .potato {
+    width: auto;
+    height: 8rem;
+    margin-left: 0;
+  }
+
+  .green {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: inherit;
+    padding: 1rem;
+  }
+
+  .green h1 {
+    font-size: 2.5rem; /* Reduced font size for smaller screens */
+  }
+
+  .green h2 {
+    font-size: 2.5rem; /* Reduced font size */
+    margin-left: 0; /* Centered text */
+  }
+
+  .body h3 {
+    width: 90%;
+    margin-left: auto; /* Centering element */
+    margin-right: auto;
+    font-size: 2.5rem; /* Reduced font size for readability */
+    margin-top: 3rem; /* Reduced margin-top for better spacing */
+    padding: 1rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 1rem;
+  }
+
+  .products {
+    display: flex; /* Changed to flexbox to stack products */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 1.5rem; /* Adjusted gap between items */
+    padding: 1rem; /* Adjusted padding */
+  }
+
+  .product {
+    width: 100%; /* Full width of the container */
+    max-width: 90%; /* Adjusted max-width for better fit */
+    margin: 0; /* Removed margin */
+  }
+
+  .product img {
+    width: auto;
+    height: 20rem; /* Adjusted height for better fit */
+    border-radius: 0.5rem;
+  }
+
+  .product p {
+    font-size: 3rem; /* Reduced font size for readability */
+    width: 50%; /* Full width of the product box */
+    text-align: center; /* Center text */
+  }
+
+  footer {
+    margin-top: 5rem; /* Reduced margin-top for better spacing */
+    padding: 2rem 1rem;
+  }
+
+  footer h1 {
+    font-size: 1rem; /* Reduced font size for readability */
+  }
+
+  footer img {
+    width: 2.5rem; /* Adjusted size for smaller screens */
+    margin-right: 1rem; /* Adjusted margin */
+  }
+}
+
+/* Tablet to Laptop View: Min width 769px and Max width 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav-buttons {
+    height: 8vh;
+    justify-content: center;
+  }
+
+  .nav-buttons h1 a {
+    margin-right: 3rem; /* Reduced margin for smaller screens */
+    font-size: 2rem; /* Adjusted font size for readability */
+  }
+
+  header {
+    height: 50vh; /* Adjusted height for better proportion */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header img {
+    width: auto;
+    left: 12rem;
+    top: 3rem;
+    height: 34.7rem;
+  }
+
+  .body-child {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .white {
+    width: 100%;
+    height: 10rem;
+    margin: 1rem;
+  }
+
+  .potato {
+    width: auto;
+    height: 9rem;
+    margin-left: 8rem;
+  }
+
+  .green {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: inherit;
+    padding: 1rem;
+  }
+
+  .green h1 {
+    font-size: 2.5rem; /* Reduced font size for smaller screens */
+  }
+
+  .green h2 {
+    font-size: 2.5rem; /* Reduced font size */
+    margin-left: 0; /* Centered text */
+  }
+
+  .body h3 {
+    width: 90%;
+    margin-left: auto; /* Centering element */
+    margin-right: auto;
+    font-size: 2.5rem; /* Reduced font size for readability */
+    margin-top: 3rem; /* Reduced margin-top for better spacing */
+    padding: 1rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 1rem;
+  }
+
+  .products {
+    display: flex; /* Changed to flexbox to stack products */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 1.5rem; /* Adjusted gap between items */
+    padding: 1rem; /* Adjusted padding */
+  }
+
+  .product {
+    width: 100%; /* Full width of the container */
+    max-width: 90%; /* Adjusted max-width for better fit */
+    margin: 0; /* Removed margin */
+  }
+
+  .product img {
+    width: auto;
+    height: 25rem; /* Adjusted height for better fit */
+    border-radius: 0.5rem;
+  }
+
+  .product p {
+    font-size: 3rem; /* Reduced font size for readability */
+    width: 50%; /* Full width of the product box */
+    text-align: center; /* Center text */
+  }
+
+  footer {
+    margin-top: 5rem; /* Reduced margin-top for better spacing */
+    padding: 2rem 1rem;
+  }
+
+  footer h1 {
+    font-size: 1rem; /* Reduced font size for readability */
+  }
+
+  footer img {
+    width: 2.5rem; /* Adjusted size for smaller screens */
+    margin-right: 1rem; /* Adjusted margin */
+  }
+}
+
+/* Laptop/Desktop View: Min width 1025px and Max width 1440px */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .nav-buttons {
+    height: 8vh;
+    justify-content: center;
+  }
+
+  .nav-buttons h1 a {
+    margin-right: 3rem; /* Reduced margin for smaller screens */
+    font-size: 2rem; /* Adjusted font size for readability */
+  }
+
+  header {
+    height: 50vh; /* Adjusted height for better proportion */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header img {
+    width: auto;
+    left: 25rem;
+    top: 3rem;
+    height: 34.7rem;
+  }
+
+  .body-child {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .white {
+    width: 100%;
+    height: 10rem;
+    margin: 1rem;
+  }
+
+  .potato {
+    width: auto;
+    height: 9rem;
+    margin-left: 22rem;
+  }
+
+  .green {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: inherit;
+    padding: 1rem;
+  }
+
+  .green h1 {
+    font-size: 2.5rem; /* Reduced font size for smaller screens */
+  }
+
+  .green h2 {
+    font-size: 2.5rem; /* Reduced font size */
+    margin-left: 0; /* Centered text */
+  }
+
+  .body h3 {
+    width: 90%;
+    margin-left: auto; /* Centering element */
+    margin-right: auto;
+    font-size: 2.5rem; /* Reduced font size for readability */
+    margin-top: 3rem; /* Reduced margin-top for better spacing */
+    padding: 1rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 1rem;
+  }
+
+  .products {
+    display: flex; /* Changed to flexbox to stack products */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 1.5rem; /* Adjusted gap between items */
+    padding: 1rem; /* Adjusted padding */
+  }
+
+  .product {
+    width: 100%; /* Full width of the container */
+    max-width: 90%; /* Adjusted max-width for better fit */
+    margin: 0; /* Removed margin */
+  }
+
+  .product img {
+    width: auto;
+    height: 25rem; /* Adjusted height for better fit */
+    border-radius: 0.5rem;
+  }
+
+  .product p {
+    font-size: 3rem; /* Reduced font size for readability */
+    width: 50%; /* Full width of the product box */
+    text-align: center; /* Center text */
+  }
+
+  footer {
+    margin-top: 5rem; /* Reduced margin-top for better spacing */
+    padding: 2rem 1rem;
+  }
+
+  footer h1 {
+    font-size: 1rem; /* Reduced font size for readability */
+  }
+
+  footer img {
+    width: 2.5rem; /* Adjusted size for smaller screens */
+    margin-right: 1rem; /* Adjusted margin */
+  }
+}
