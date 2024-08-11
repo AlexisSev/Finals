@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and border are included in width/height */
+  text-decoration: none;
+}
+
+body {
+  background-color: #f9a833;
+}
+img {
+  transition: all 1s ease-in-out;
+}
+
+.search-bar {
+  background-color: #c69144;
+  border-radius: 1rem;
+  width: 34rem;
+  height: auto;
+  margin: 1rem auto; /* Center horizontally */
+  text-align: center;
+}
+
+.logo {
+  position: absolute;
+  width: auto;
+  height: 17rem;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+header ul {
+  display: flex;
+  width: 50%;
+  height: auto;
+  background-color: #c69144;
+  margin-top: 5rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  justify-content: center; /* Center align items */
+}
+
+header a {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  font-weight: 600;
+  list-style-type: none;
+}
+
+header a:hover {
+  background-color: #f9a833;
+  color: red;
+  border-radius: 2rem;
+}
+
+.buy {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.buy-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 6rem;
+  background-color: white;
+  border-radius: 2rem;
+}
+
+.dad, .mother {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr; /* Ensures consistent row height */
+  justify-content: center;
+  gap: 7rem;
+  width: 80%;
+  margin-left: 17rem;
+  margin-top: 2rem;
+}
+
+.product-container, .product-container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35rem;
+  min-height: 400px; /* Ensure all containers have at least this height */
+}
+
+.products, .products2 {
+  background-color: #c69144;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  flex-grow: 1; /* Ensures the div grows to fill available space */
+}
+
+.products img, .products2 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product-info, .product-info2 {
+  background-color: #f27f0e;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.product-info h1, .product-info2 h1 {
+  font-size: 2.4rem;
+  margin: 0 0 5px;
+}
+
+.product-info p, .product-info2 p {
+  font-size: 3rem;
+  color: #000;
+  margin: 0;
+}
+
+.product-container:last-child {
+  grid-column: 1 / span 2;
+  justify-self: center;
+  margin-left: -15rem;
+}
+
+.regular {
+  width: 100%;
+  text-align: center;
+  margin: 5rem 0;
+  font-size: 2.5rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2rem;
+}
+
+.drinks {
+  position: absolute;
+  top: 286rem;
+  margin-left: 38rem;
+  width: 12rem;
+  font-size: 2.6rem;
+  text-align: center;
+  border-radius: 1rem;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Phone View (up to 425px) */
+@media (max-width: 425px) {
+  .search-bar {
+    width: 90%;
+    margin: 1rem auto;
+  }
+  .logo {
+    display: block; /* Show logo in phone view */
+    height: 10rem;
+  }
+  header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  header ul {
+    width: 90%;
+    background-color: #c69144;
+    margin-top: 3rem;
+    border-radius: 2rem;
+  }
+  
+  header a {
+    font-size: 2rem; 
+    margin: 1rem;
+    padding: 0.5rem;
+  }
+  .buy-1 {
+    width: 90%;
+  }
+  .dad, .mother {
+    grid-template-columns: 1fr; /* Stack images vertically */
+    gap: 2rem;
+  }
+
+  .product-container, .product-container2 {
+    width: 90%;
+  }
+  .product-info h1, .product-info2 h1 {
+    font-size: 2rem;
+  }
+  .product-info p, .product-info2 p {
+    font-size: 2.5rem;
+  }
+  .drinks {
+    position: static;
+    margin: 2rem auto;
+    width: 80%;
+  }
+  footer {
+    height: 15vh;
+  }
+}
+
+/* Tablet View (426px to 768px) */
+@media (min-width: 426px) and (max-width: 768px) {
+  .search-bar {
+    width: 80%;
+    margin: 1rem auto;
+  }
+  .logo {
+    display: none; /* Hide logo in tablet view */
+    height: 12rem;
+  }
+  header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  header ul {
+    width: 100%;
+    background-color: #c69144;
+    margin-top: 5rem;
+  }
+  header a {
+    font-size: 1.6rem;
+    margin-left: 3.4rem;
+    padding: 1rem;
+  }
+  .buy-1 {
+    width: 100%;
+  }
+  .dad, .mother {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-left: 7rem;
+  }
+  
+  .product-container:last-child {
+    margin-left: 0;
+  }
+  .product-container, .product-container2 {
+    width: 80%;
+  }
+  .product-info h1, .product-info2 h1 {
+    font-size: 2.2rem;
+  }
+  .product-info p, .product-info2 p {
+    font-size: 2.8rem;
+  }
+  .drinks {
+    position: static;
+    margin: 2rem 1.2rem;
+    width: 70%;
+  }
+  footer {
+    height: 12vh;
+  }
+  footer h1 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Laptop View (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .search-bar {
+    width: 70%;
+    margin: 1rem auto;
+  }
+  .logo {
+    display: none; /* Hide logo in laptop view */
+    height: 15rem;
+  }
+  header ul {
+    width: 80%;
+    margin-top: 4rem;
+  }
+  header a {
+    font-size: 1.7rem;
+    margin-left: 4.9rem;
+  }
+  .buy-1 {
+    width: 70%;
+  }
+  .dad, .mother {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
+    margin-left: 10rem;
+  }
+
+  .product-container, .product-container2 {
+    width: 70%;
+  }
+  .product-info h1, .product-info2 h1 {
+    font-size: 2.4rem;
+  }
+  .product-info p, .product-info2 p {
+    font-size: 3rem;
+  }
+  .drinks {
+    position: absolute;
+    margin-left: 14rem;
+    width: 30%;
+    top: 234rem;
+  }
+  footer {
+    height: 10vh;
+  }
+}
+
+/* Laptop Large View (1025px and above) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .search-bar {
+    width: 60%;
+    margin: 1rem auto;
+  }
+  .logo {
+    display: none;
+    height: 17rem;
+  }
+  header ul {
+    width: 60%;
+    margin-top: 4rem;
+  }
+  header a {
+    font-size: 3rem;
+    margin: 2rem;
+  }
+  .buy-1 {
+    width: 60%;
+  }
+  .dad, .mother {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+  .product-container, .product-container2 {
+    width: 60%;
+  }
+  .product-info h1, .product-info2 h1 {
+    font-size: 2.6rem;
+  }
+  .product-info p, .product-info2 p {
+    font-size: 3.2rem;
+  }
+  .drinks {
+    position: absolute;
+    margin: 2rem auto;
+    width: 50%;
+  }
+  footer {
+    height: 10vh;
+  }
+}
