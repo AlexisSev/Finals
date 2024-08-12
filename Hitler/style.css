@@ -1,0 +1,455 @@
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+body{
+  background-color: #006634;
+}
+img {
+  transition: all 0.5s ease-in-out;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: auto;
+  background-color: #006634;
+  font-size: 2rem;
+}
+
+.header a {
+  text-decoration: none;
+  color: white;
+  margin-left: 4rem;
+  font-family: "Sen";
+}
+.header a:hover {
+  background-color: aliceblue;
+  color: black;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.body {
+  background-image: url(images/abstract-blue-wave-decoration-png-background-1-removebg-preview\ 2.png);
+  background-repeat: no-repeat;
+  background-color: #006634;
+  background-size: cover;
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.body h1 {
+  margin-top: 15rem;
+  margin-left: 5rem;
+  font-family: "Ysabeau SC";
+  color: white;
+  font-size: 4rem;
+}
+
+.body h2 {
+  font-family: "Salsa";
+  color: white;
+  font-size: calc(4rem + 3vw);
+  transition: font-size all 1s ease-out;
+  margin-left: 5rem;
+}
+
+.body img {
+  position: absolute;
+  width: auto;
+  height: 73rem;
+  right: 10rem;
+}
+.body-child {
+  background-color: #006634;
+}
+
+.nachos {
+  left: 42%;
+  top: 124rem;
+  font-size: 5rem;
+  position: absolute;
+  font-family: "Salsa";
+  color: white;
+}
+
+.products {
+  background-color: #006634;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+  gap: 5rem;
+}
+
+.products img {
+  margin-top: 4rem;
+  width: auto;
+  height: 30rem;
+}
+
+.products p {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Ysabeau SC";
+  color: white;
+}
+
+.and {
+  position: absolute;
+  font-size: 4rem;
+  font-family: "Ysabeau SC";
+  left: 46%;
+  top: 172rem;
+  color: white;
+}
+
+.tacos {
+  position: absolute;
+  font-size: 6rem;
+  font-family: "SALSA";
+  left: 42.5%;
+  top: 177rem;
+  color: white;
+}
+
+.products-2 {
+  background-color: #006634;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  gap: 5rem;
+}
+
+.products-2 img {
+  margin-top: 8rem;
+  width: auto;
+  height: 30rem;
+}
+
+.products-2 p {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Ysabeau SC";
+  color: white;
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  background-color: #043C21;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ysabeau SC";
+  color: white;
+}
+
+
+@media (max-width: 425px) {
+  .header {
+    font-size: 1.5rem;
+    height: 12vh;
+  }
+
+  .header a {
+    margin-left: 1rem;
+  }
+  
+  .body h1 {
+    font-size: 2.5rem;
+    margin-top: 10rem;
+    margin-left: 2rem;
+  }
+
+  .body h2 {
+    font-size: 3rem;
+    margin-left: 2rem;
+  }
+
+  .body img {
+    width: 100%;
+    height: auto;
+    right: 0;
+    position: relative;
+    margin-top: 2rem;
+  }
+
+  .nachos, .and, .tacos {
+    font-size: 2.5rem;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: relative;
+    top: auto;
+  }
+
+  .products, .products-2 {
+    flex-direction: column;
+    gap: 2rem;
+    height: auto;
+  }
+
+  .products img, .products-2 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .products p, .products-2 p {
+    font-size: 1.5rem;
+  }
+}
+
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .header {
+    font-size: 0.7rem;
+    height: 17vh;
+  }
+
+  .header a {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+  .header img {
+    width: 8rem;
+  }
+  .body{
+    width: 100%;
+    height:40vh;
+  }
+
+  .body h1 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    
+  }
+
+  .body h2 {
+    font-size: 1.5rem;
+    margin-left: 3rem;
+  }
+
+  .body img {
+    width: 17rem;
+    height: 17rem;
+    left: 18rem;
+    top: 17rem;
+  }
+  .body-child img {
+    width: auto;
+    height: 5rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+  .nachos{
+    font-size: 3.5rem;
+    left: 32%;
+    top: 47rem;
+    width: 100%;
+  }
+  .and{
+    top: 153rem;
+    font-size: 1.5rem;
+    left: 17.3rem;
+    width: 100%;
+  }
+  .tacos{
+    top: 155rem;
+    font-size: 4rem;
+    left: 13rem;
+    width: 100%;
+    
+  }
+
+  .products{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+    margin-top: 10rem;
+  }
+  .products-2{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+    margin-top: 10rem;
+    margin-bottom: 1rem;
+  }
+
+  .products img{
+    width: 80%;
+    height: auto;
+    margin-left: 1.4rem;
+  }
+  .products-2 img{
+    width: 80%;
+    height: auto;
+    margin-left: 1.4rem;
+  }
+  footer h1{
+    font-size: 1.4rem;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .header {
+    font-size:1.4rem;
+    height: 17vh;
+  }
+
+  .header a {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+  .body{
+    width: 100%;
+    height:65vh;
+  }
+
+  .body h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    
+  }
+
+  .body h2 {
+    font-size: 3rem;
+    margin-left: 3rem;
+  }
+
+  .body img {
+    width: 28rem;
+    height: 30rem;
+    left: 32rem;
+    top: 20rem;
+  }
+  .body-child img {
+    width: auto;
+    height: 10rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+  .nachos{
+    font-size: 3.5rem;
+    left: 24rem;
+    top: 70rem;
+    width: 100%;
+  }
+  .and{
+    top: 115rem;
+    font-size: 1.5rem;
+    left: 28.4rem;
+  }
+  .tacos{
+    top: 120rem;
+    font-size: 4rem;
+    left: 24rem;
+    
+  }
+
+  .products img{
+    width: 100%;
+    height: auto;
+    margin-left: 1.4rem;
+  }
+  .products-2 img{
+    width: auto;
+    height: auto;
+    margin-left: 1.4rem;
+  }
+  footer h1{
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .header {
+    font-size: 1.6rem; 
+    height: 18vh;
+  }
+
+  .header a {
+    margin-left: 1rem;
+    margin-right: 1.5rem; 
+  }
+
+  .body {
+    width: 100%;
+    height: 120vh;
+  }
+
+  .body h1 {
+    font-size: 3.2rem; 
+    margin-top:10rem;
+    margin-left: 4rem; 
+  }
+
+  .body h2 {
+    font-size: calc(3em + 1vw); 
+    margin-left: 4rem; 
+  }
+
+  .body img {
+    width: 52rem; 
+    height: 52rem; 
+    left: 53rem; 
+    top: 25rem; 
+  }
+
+  .body-child img {
+    width: auto;
+    height: 12rem; 
+    border-top-right-radius: 2.5rem; 
+    border-bottom-right-radius: 2.5rem; 
+  }
+
+  .nachos {
+    font-size: 4rem;
+    left: 51rem; 
+    top: 108rem; 
+    width: 100%;
+  }
+
+  .and {
+    top: 153rem; 
+    font-size: 2rem; 
+    left: 57rem; 
+  }
+
+  .tacos {
+    top: 158rem; 
+    font-size: 5rem; 
+    left: 51rem; 
+  }
+
+  .products img {
+    width: auto;
+    height: 20rem;
+    margin-left: 2rem; 
+  }
+
+  .products-2 img {
+    width: auto;
+    height: auto;
+    margin-left: 2rem; 
+  }
+
+  footer h1 {
+    font-size: 1.6rem;
+  }
+}
